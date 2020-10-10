@@ -13,7 +13,6 @@ class SpiderBilibiliMediaEpisode(object):
 
     def  __init__(self, media_id='md28229420'):
         '''
-
         :param media_id: the media's, eg: mdxxxxx.
         '''
         self.media_url = 'https://www.bilibili.com/bangumi/media/' + media_id
