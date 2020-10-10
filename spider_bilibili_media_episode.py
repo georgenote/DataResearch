@@ -67,7 +67,7 @@ class SpiderBilibiliMediaEpisode(object):
 
             episode_data[episode_id] = episode_content
 
-        print(episode_data)
+        return episode_data
 
     def main(self):
 
@@ -78,3 +78,5 @@ class SpiderBilibiliMediaEpisode(object):
 if __name__ == "__main__":
     spider = SpiderBilibiliMediaEpisode()
     spider.main()
+
+    print(episode_data)
