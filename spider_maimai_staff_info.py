@@ -264,8 +264,8 @@ class GetStaffInfo(object):
     def insert_staff_info(self, data_staff_info, filename, data_sum):
         """
         将获取到的数据写入本地备用
-        :param data_staff_info: 
-        :return: 
+        :param data_staff_info:
+        :return:
         """
 
         num = len(data_staff_info)
@@ -280,14 +280,14 @@ class GetStaffInfo(object):
 
 if __name__ == "__main__":
 
-    # 基础设置
-    cookie = input("Please input reques headers's cookie:")
+    # 需要修改的设置
+    cookie = ''
+    search_page_num = 5 # num * 20
+    search_word_text = ['xx','yy']
 
+    # 基础设置
     data_num = 0
     data_info_list = {}
-    search_page_num = int(input('Please input page_sum by number(20 people by page):')) # num * 20
-    search_word_text = input('Please input word (split by ,):') # 需修复 适合多词组
-    print(search_word_text)
 
     get_staff_info = GetStaffInfo(cookie)
 
