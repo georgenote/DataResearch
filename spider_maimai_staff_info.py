@@ -156,10 +156,13 @@ class GetStaffInfo(object):
                     else:
                         data = data[-2]
 
-                    data = data[data.find('"')+1:data.rfind('"')]
+                    try:
+                        data = data[data.find('"')+1:data.rfind('"')]
+                        data = json.loads(data)
 
-                    # print(1, num_split, data)
-                    data = json.loads(data)
+                    except Exception as e:
+                        print(e)
+                        print(num_split, data)
 
                     # 基础信息
                     card = data['data']['card']
