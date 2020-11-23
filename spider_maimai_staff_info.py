@@ -267,8 +267,6 @@ class GetStaffInfo(object):
     def insert_staff_info(self, data_staff_info, filename, data_sum):
         """
         将获取到的数据写入本地备用
-        :param data_staff_info:
-        :return:
         """
 
         num = len(data_staff_info)
